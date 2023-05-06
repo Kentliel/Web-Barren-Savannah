@@ -7,16 +7,15 @@ body{
 	font-family: "Adobe Garamond Pro Bold",Georgia, 'Times New Roman', Times, serif;
 	text-align: center;
 	position: relative;
-	background: linear-gradient(rgb(230, 103, 0),black);
+	background: linear-gradient(rgb(161, 72, 4) 0%,rgb(245, 142, 16) 10%,
+	rgb(241, 113, 8) 15%, black);
 }
 nav{
 	display: flex;
 	height: auto;
 	overflow: hidden;
 	width: 670px;
-	gap: 10px;
-	
-	
+	gap: 10px;	
 }
 
 nav::before{
@@ -30,28 +29,31 @@ nav::before{
 	z-index: -1;
 }
 a:link{
-	color: #000;
+	color: #000000;
 }
 .TopLinkProyect{
-	display: inline-flex;
+	display: inline-block;
 	text-decoration: none;
 	margin-bottom: 0px;
 	border-bottom: dashed 1px;
 	height: 35px;
 	line-height: 35px;
-
+	margin-top: 30px;
 }
 .TopLinkProyect>a{
 	display: inline;
-	text-decoration: ;
+	text-decoration: none;
 }
-.TopLinkProyect:hover{
-	color: #000;
+.TopLinkProyect>a:hover{
+	color: white;
 	font-size: 16px;
 	width: 121px;
 	height: 35px;
 	line-height: 35px;
-	background-color: #2b2727;
+	padding: 1.5rem 2rem;
+	background-color: #000;
+	box-shadow: 0.3em 0.3em 0.5em rgb(0, 0, 0);
+
 }
 #mainpicture{
 	clear: both;
@@ -61,12 +63,11 @@ a:link{
 }
 section.picture{
 	background-image: url("https://proyecto-sabana.vercel.app/assets/img/mainImage.jpg");
+	position: relative;
+	top: 10px;
 	margin-left: 10px;
 	width: 650px;
 	height: 325px;
-}
-section.picture::after{
-
 }
 #headerTitle{
 	width: 650px;
@@ -90,24 +91,27 @@ section.picture::after{
 }
 main.contentBox{
 	margin-top: 10px;
-	width: 670px;
-	height: auto;
-	background-color: #160306;
-	padding-bottom: 20px;
-	padding-top: 1px;
-	text-align: justify;
-}
-section.innerBox{
-	margin-left: 10px;
 	width: 650px;
 	height: auto;
+	background-color: #160306;
+	padding: 10px;
+	text-align: justify;
+	line-height: 1.5;
+}
+section.innerBox{
+	height: auto;
 	top: 10px;
-	background-color: #ffffff;
+	background: linear-gradient(rgb(253, 183, 91), rgb(255, 223, 163));
+	padding: 10px;
+}
+.prueba{
+	display: inline;
+	text-decoration: none;
+	color: rgb(224, 121, 4);
 }
 h1{
 	font-size: 25px;
 	margin-bottom: 10px;
-	padding-top: 18px;
 	margin-left: 15px;
 	margin-top: 15px;
 	color: #1F1603;
