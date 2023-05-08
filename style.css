@@ -101,7 +101,7 @@ main.contentBox{
 section.innerBox{
 	height: auto;
 	top: 10px;
-	background: linear-gradient(rgb(253, 183, 91), rgb(255, 223, 163));
+	background: linear-gradient(rgb(236, 191, 132) , rgb(255, 255, 255) );
 	padding: 10px;
 }
 .prueba{
